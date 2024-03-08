@@ -24,7 +24,7 @@ public class InventoryItem
         if (newPrice >= 0)
         {
             Price = newPrice;
-            Console.WriteLine("Price updated successfully.");
+            Console.WriteLine("Price updated.");
         }
         else
         {
@@ -89,7 +89,7 @@ class Program
 
 
         // Print initial details of items
-        Console.WriteLine("Initial state of items:");
+        Console.WriteLine("Items Available:");
         laptop.PrintDetails();
         smartphone.PrintDetails();
         Console.WriteLine(); 
@@ -107,7 +107,7 @@ class Program
         Console.WriteLine(); 
 
         // Restock smartphones and print updated details
-        Console.WriteLine("Restocking smartphones:");
+        Console.WriteLine("Restock smartphones:");
         smartphone.RestockItem(5);
         smartphone.PrintDetails();
         Console.WriteLine(); 
