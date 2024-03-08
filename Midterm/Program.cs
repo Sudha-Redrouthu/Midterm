@@ -1,4 +1,6 @@
-﻿public class InventoryItem
+﻿using System.Reflection.Metadata.Ecma335;
+
+public class InventoryItem
 {
     // Properties
     public string ItemName { get; set; }
@@ -56,12 +58,15 @@
     public bool IsInStock()
     {
         // TODO: Return true if the item is in stock (quantity > 0), otherwise false.
+        return QuantityInStock > 0;
     }
 
     // Print item details
     public void PrintDetails()
     {
         // TODO: Print the details of the item (name, id, price, and stock quantity).
+    Console.WriteLine($"Item Name:{ItemName}, ID:{ItemId},Price:{Price}, StockQuantity:{QuantityInStock}");
+
     }
 }
 class Program
