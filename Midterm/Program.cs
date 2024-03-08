@@ -19,8 +19,6 @@ public class InventoryItem
     
     }
 
-
-
     // Methods
 
     // Update the price of the item
@@ -94,7 +92,7 @@ class Program
         item2.PrintDetails();
 
         // 4. Check if an item is in stock and print a message accordingly.
-        if (item1.IsInStock()
+        if(item1.IsInStock())
             {
             Console.WriteLine($"{item1.ItemName}is in stock");
 
