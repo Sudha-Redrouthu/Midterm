@@ -10,10 +10,10 @@
     public InventoryItem(string itemName, int itemId, double price, int quantityInStock)
     {
         // TODO: Initialize the properties with the values passed to the constructor.
-        itemName = itemName;
-        itemId = itemId;
-        price = price;
-        quantityInStock = quantityInStock;
+        ItemName = itemName;
+        ItemId = itemId;
+        Price = price;
+        QuantityInStock = quantityInStock;
     
     }
 
@@ -25,12 +25,15 @@
     public void UpdatePrice(double newPrice)
     {
         // TODO: Update the item's price with the new price.
+        Price = newPrice;
     }
 
     // Restock the item
     public void RestockItem(int additionalQuantity)
     {
         // TODO: Increase the item's stock quantity by the additional quantity.
+        QuantityInStock += additionalQuantity;
+    
     }
 
     // Sell an item
@@ -38,6 +41,15 @@
     {
         // TODO: Decrease the item's stock quantity by the quantity sold.
         // Make sure the stock doesn't go negative.
+    if (QuantityInStock>= quantitySold)
+        {
+            QuantityInStock -= quantitySold;
+        }
+    else
+        {
+            Console.WriteLine("Not enough stock to sell the requested amount");
+
+        }
     }
 
     // Check if an item is in stock
