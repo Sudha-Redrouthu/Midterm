@@ -69,8 +69,12 @@ public class InventoryItem
     // Method to print the details of the item
     public void PrintDetails()
     {
-        Console.WriteLine($"Item Name: {ItemName}, ID: {ItemId}, Price: {Price}, Stock Quantity: {QuantityInStock}");
+        Console.WriteLine($"Item Name: {ItemName}");
+        Console.WriteLine($"ID: {ItemId}");
+        Console.WriteLine($"Price: {Price}");
+        Console.WriteLine($"Stock Quantity: {QuantityInStock}\n");
     }
+
 }
 
 
@@ -81,6 +85,8 @@ class Program
         // Initialize items
         InventoryItem laptop = new InventoryItem("Laptop", 101, 1200.5, 10);
         InventoryItem smartphone = new InventoryItem("Smartphone", 102, 800.3, 15);
+
+
 
         // Print initial details of items
         Console.WriteLine("Initial state of items:");
@@ -109,6 +115,8 @@ class Program
         // Check and print stock status for smartphones
         Console.WriteLine("Checking smartphone stock status:");
         Console.WriteLine(smartphone.IsInStock() ? "Smartphone is in stock." : "Smartphone is not in stock.");
-        Console.WriteLine(); 
+        Console.WriteLine();
+       
+
     }
 }
