@@ -80,10 +80,29 @@ class Program
         // TODO: Implement logic to interact with these objects.
         // Example tasks:
         // 1. Print details of all items.
-        // 2. Sell some items and then print the updated details.
-        // 3. Restock an item and print the updated details.
-        // 4. Check if an item is in stock and print a message accordingly.
+        item1.PrintDetails();
+        item2.PrintDetails();
 
-       
+        // 2. Sell some items and then print the updated details.
+
+        item1.SellItem(3);
+        item1.PrintDetails();
+
+        // 3. Restock an item and print the updated details.
+
+        item2.RestockItem(5);
+        item2.PrintDetails();
+
+        // 4. Check if an item is in stock and print a message accordingly.
+        if (item1.IsInStock()
+            {
+            Console.WriteLine($"{item1.ItemName}is in stock");
+
+        }
+        else
+        {
+            Console.WriteLine($"{item1.ItemName}is not in stock");
+
+        }
     }
 }
