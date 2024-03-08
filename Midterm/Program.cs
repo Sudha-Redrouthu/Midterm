@@ -73,7 +73,7 @@ public class InventoryItem
     }
 }
 
-// The Program class should not have any top-level statements, as that may cause conflicts with namespace and type declarations.
+
 class Program
 {
     static void Main()
@@ -86,29 +86,29 @@ class Program
         Console.WriteLine("Initial state of items:");
         laptop.PrintDetails();
         smartphone.PrintDetails();
-        Console.WriteLine(); // Adding blank line for readability
+        Console.WriteLine(); 
 
         // Update price of the laptop and print details
         Console.WriteLine("Updating the price of the laptop:");
         laptop.UpdatePrice(1000);
         laptop.PrintDetails();
-        Console.WriteLine(); // Adding blank line for readability
+        Console.WriteLine(); 
 
         // Sell laptops and print updated details
         Console.WriteLine("Selling laptops:");
         laptop.SellItem(3);
         laptop.PrintDetails();
-        Console.WriteLine(); // Adding blank line for readability
+        Console.WriteLine(); 
 
         // Restock smartphones and print updated details
         Console.WriteLine("Restocking smartphones:");
         smartphone.RestockItem(5);
         smartphone.PrintDetails();
-        Console.WriteLine(); // Adding blank line for readability
+        Console.WriteLine(); 
 
         // Check and print stock status for smartphones
         Console.WriteLine("Checking smartphone stock status:");
         Console.WriteLine(smartphone.IsInStock() ? "Smartphone is in stock." : "Smartphone is not in stock.");
-        Console.WriteLine(); // Adding blank line for readability
+        Console.WriteLine(); 
     }
 }
