@@ -80,7 +80,7 @@ public class InventoryItem
 
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
         // Initialize items
         InventoryItem laptop = new InventoryItem("Laptop", 101, 1200.5, 10);
@@ -116,7 +116,13 @@ class Program
         Console.WriteLine("Checking smartphone stock status:");
         Console.WriteLine(smartphone.IsInStock() ? "Smartphone is in stock." : "Smartphone is not in stock.");
         Console.WriteLine();
-       
+
+        // Check and print stock status for laptops
+        Console.WriteLine("Checking laptop stock status:");
+        Console.WriteLine(laptop.IsInStock() ? "Laptop is in stock." : "Laptop is not in stock.");
+        Console.WriteLine();
+
+
 
     }
 }
